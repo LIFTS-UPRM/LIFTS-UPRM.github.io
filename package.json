@@ -1,0 +1,23 @@
+{
+  "name": "lifts-website",
+  "version": "2.0.0",
+  "description": "LIFTS - Launch Initiatives for Technologies in Space website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server --port=3000",
+    "dev": "npx live-server --port=3000 --open=/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LIFTS-UPRM/website"
+  },
+  "keywords": [
+    "lifts",
+    "uprm",
+    "space",
+    "high-altitude-balloon",
+    "cubesat"
+  ],
+  "author": "LIFTS Team",
+  "license": "MIT"
+}

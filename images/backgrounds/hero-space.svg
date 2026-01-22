@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <!-- Hero Space Background -->
+  <rect width="1920" height="1080" fill="#000"/>
+  
+  <!-- Star field -->
+  <g fill="#fff">
+    <!-- Layer 1 - Distant stars -->
+    <circle cx="100" cy="100" r="0.5" opacity="0.3"/>
+    <circle cx="250" cy="180" r="0.5" opacity="0.4"/>
+    <circle cx="400" cy="80" r="0.5" opacity="0.3"/>
+    <circle cx="550" cy="200" r="0.5" opacity="0.5"/>
+    <circle cx="700" cy="120" r="0.5" opacity="0.3"/>
+    <circle cx="850" cy="60" r="0.5" opacity="0.4"/>
+    <circle cx="1000" cy="180" r="0.5" opacity="0.3"/>
+    <circle cx="1150" cy="100" r="0.5" opacity="0.5"/>
+    <circle cx="1300" cy="220" r="0.5" opacity="0.3"/>
+    <circle cx="1450" cy="80" r="0.5" opacity="0.4"/>
+    <circle cx="1600" cy="160" r="0.5" opacity="0.3"/>
+    <circle cx="1750" cy="120" r="0.5" opacity="0.5"/>
+    <circle cx="1850" cy="200" r="0.5" opacity="0.3"/>
+    
+    <!-- Layer 2 - Mid stars -->
+    <circle cx="180" cy="300" r="1" opacity="0.5"/>
+    <circle cx="380" cy="400" r="1" opacity="0.6"/>
+    <circle cx="580" cy="350" r="1" opacity="0.5"/>
+    <circle cx="780" cy="450" r="1" opacity="0.7"/>
+    <circle cx="980" cy="320" r="1" opacity="0.5"/>
+    <circle cx="1180" cy="420" r="1" opacity="0.6"/>
+    <circle cx="1380" cy="380" r="1" opacity="0.5"/>
+    <circle cx="1580" cy="440" r="1" opacity="0.7"/>
+    <circle cx="1780" cy="360" r="1" opacity="0.5"/>
+    
+    <!-- Layer 3 - Bright stars -->
+    <circle cx="300" cy="600" r="1.5" opacity="0.8"/>
+    <circle cx="600" cy="700" r="2" opacity="0.9"/>
+    <circle cx="900" cy="550" r="1.5" opacity="0.8"/>
+    <circle cx="1200" cy="650" r="2" opacity="0.9"/>
+    <circle cx="1500" cy="580" r="1.5" opacity="0.8"/>
+    <circle cx="1800" cy="720" r="2" opacity="0.9"/>
+    
+    <!-- More scattered stars -->
+    <circle cx="50" cy="500" r="1" opacity="0.6"/>
+    <circle cx="150" cy="800" r="1.5" opacity="0.7"/>
+    <circle cx="450" cy="900" r="1" opacity="0.5"/>
+    <circle cx="750" cy="850" r="1.5" opacity="0.8"/>
+    <circle cx="1050" cy="950" r="1" opacity="0.6"/>
+    <circle cx="1350" cy="880" r="1.5" opacity="0.7"/>
+    <circle cx="1650" cy="920" r="1" opacity="0.5"/>
+    <circle cx="1900" cy="850" r="1.5" opacity="0.8"/>
+  </g>
+  
+  <!-- Subtle nebula glow -->
+  <ellipse cx="1400" cy="300" rx="400" ry="200" fill="#1a0033" opacity="0.3"/>
+  <ellipse cx="400" cy="800" rx="300" ry="150" fill="#001a33" opacity="0.2"/>
+</svg>

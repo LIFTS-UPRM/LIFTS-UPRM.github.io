@@ -1,0 +1,17 @@
+.mission-content {
+    padding: 120px 50px 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mission-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.mission-content p {
+    font-family: D-DIN-Regular, Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LIFTS - Launch Initiatives for Technologies in Space. A near-space research program from the University of Puerto Rico, Mayagüez conducting high-altitude balloon missions and advancing space exploration education.">
+    <meta name="keywords" content="LIFTS, near-space, high-altitude balloon, UPRM, space research, Puerto Rico, HAB, CubeSat">
+    <title>LIFTS | Near-Space Research Program</title>
+    <link rel="icon" href="images/logo/lifts-icon.svg">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo/lifts-logo.svg" alt="LIFTS Logo">
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="missions.html" class="nav-link">Missions</a>
+                    <a href="launches.html" class="nav-link">Launches</a>
+                    <a href="updates.html" class="nav-link">Updates</a>
+                    <a href="careers.html" class="nav-link">Careers</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-cta">
+                    <a href="contact.html#support" class="btn btn-secondary btn-sm">Support a Mission</a>
+                </div>
+            </nav>
+            
+            <!-- Mobile Navigation Toggle -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <nav class="nav-mobile" id="navMobile">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="missions.html" class="nav-link">Missions</a>
+        <a href="launches.html" class="nav-link">Launches</a>
+        <a href="updates.html" class="nav-link">Updates</a>
+        <a href="careers.html" class="nav-link">Careers</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html#support" class="btn btn-primary" style="margin-top: 2rem;">Support a Mission</a>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-media">
+                <img src="https://images.unsplash.com/photo-1661705969607-cde73828023d?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="High-altitude balloon at the edge of space" id="heroImage">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <img class="hero-title" src="images/logo/lifts-logo-white.svg" alt="LIFTS Logo White Monochrome">
+                <h2 class="hero-subtitle">Launch Initiatives for Technologies in Space</h2>
+                <p class="hero-subtitle">Advancing near-space research and inspiring the next generation of aerospace engineers from Puerto Rico.</p>
+                <div class="hero-actions">
+                    <a href="missions.html" class="btn btn-primary btn-lg">Explore Missions</a>
+                    <a href="about.html" class="btn btn-secondary btn-lg">Learn More About LIFTS</a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Featured Event / Next Mission -->
+        <section class="featured-event" id="nextMission">
+            <div class="container">
+                <div class="featured-event-content">
+                    <div class="featured-event-info">
+                        <span class="featured-event-label">Next Mission</span>
+                        <h2 class="featured-event-title">ASCENT Mission</h2>
+                        <div class="countdown" id="countdown">
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="days">--</span>
+                                <span class="countdown-label">Days</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="hours">--</span>
+                                <span class="countdown-label">Hours</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="minutes">--</span>
+                                <span class="countdown-label">Minutes</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="seconds">--</span>
+                                <span class="countdown-label">Seconds</span>
+                            </div>
+                        </div>
+                        <div class="featured-event-meta">
+                            <div class="featured-event-meta-item">
+                                <span class="featured-event-meta-label">Date</span>
+                                <span class="featured-event-meta-value">June 15, 2026</span>
+                            </div>
+                            <div class="featured-event-meta-item">
+                                <span class="featured-event-meta-label">Location</span>
+                                <span class="featured-event-meta-value">Mayagüez, PR</span>
+                            </div>
+                            <div class="featured-event-meta-item">
+                                <span class="featured-event-meta-label">Target Altitude</span>
+                                <span class="featured-event-meta-value">100,000 ft</span>
+                            </div>
+                        </div>
+                        <a href="ascent.html" class="btn btn-primary">View Mission Details</a>
+                    </div>
+                    <div class="featured-event-image">
+                        <img src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=800&q=80" alt="ASCENT Mission preparation">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Highlights -->
+        <section class="section" id="missionHighlights">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Our Work</span>
+                    <h2 class="section-title">Mission Highlights</h2>
+                    <p class="section-subtitle">Explore our completed and upcoming high-altitude balloon missions pushing the boundaries of near-space research.</p>
+                </div>
+                
+                <div class="scroll-container">
+                    <!-- NEXO Mission -->
+                    <div class="scroll-item">
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=600&q=80" alt="NEXO Mission">
+                            </div>
+                            <div class="card-content">
+                                <span class="status-tag status-completed">Completed</span>
+                                <h3 class="card-title">NEXO</h3>
+                                <p class="card-label">April 8, 2024 • Austin, Texas</p>
+                                <p class="card-description">Our first high-altitude balloon launch during the 2024 total solar eclipse as part of the Nationwide Eclipse Ballooning Project.</p>
+                                <a href="nexo.html" class="btn btn-ghost">View Mission</a>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!-- ASCENT Mission -->
+                    <div class="scroll-item">
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=600&q=80" alt="ASCENT Mission">
+                            </div>
+                            <div class="card-content">
+                                <span class="status-tag status-upcoming">Upcoming</span>
+                                <h3 class="card-title">ASCENT</h3>
+                                <p class="card-label">March 15, 2026 • Mayagüez, PR</p>
+                                <p class="card-description">Advanced Stratospheric Collection and Environmental Testing mission carrying multiple scientific payloads.</p>
+                                <a href="ascent.html" class="btn btn-ghost">View Mission</a>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!-- CubeSat Development -->
+                    <div class="scroll-item">
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=600&q=80" alt="CubeSat Development">
+                            </div>
+                            <div class="card-content">
+                                <span class="status-tag status-in-progress">In Progress</span>
+                                <h3 class="card-title">CubeSat Program</h3>
+                                <p class="card-label">Development Phase</p>
+                                <p class="card-description">Working towards launching UPRM's first student-designed and built CubeSat into low Earth orbit.</p>
+                                <a href="cubesat.html" class="btn btn-ghost">View Progress</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <div class="text-center" style="margin-top: var(--spacing-2xl);">
+                    <a href="missions.html" class="btn btn-secondary">View All Missions</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics -->
+        <section class="section" style="background: var(--color-bg-secondary);">
+            <div class="container">
+                <div class="stats reveal">
+                    <div class="stat-item">
+                        <span class="stat-value">1</span>
+                        <span class="stat-label">Missions Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">100K+</span>
+                        <span class="stat-label">Max Altitude (ft)</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">30+</span>
+                        <span class="stat-label">Team Members</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">100%</span>
+                        <span class="stat-label">Recovery Rate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Updates / News -->
+        <section class="section" style="background: var(--color-bg-secondary);" id="updates">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Stay Informed</span>
+                    <h2 class="section-title">Latest Updates</h2>
+                    <p class="section-subtitle">News and announcements from the LIFTS team.</p>
+                </div>
+                
+                <div class="grid grid-3">
+                    <article class="card reveal">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80" alt="ASCENT Mission Announcement">
+                        </div>
+                        <div class="card-content">
+                            <p class="card-label">January 10, 2026</p>
+                            <h3 class="card-title">ASCENT Mission Date Confirmed</h3>
+                            <p class="card-description">We're excited to announce the official launch date for our ASCENT mission: March 15, 2026.</p>
+                            <a href="updates.html" class="btn btn-ghost">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <article class="card reveal">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80" alt="Team Expansion">
+                        </div>
+                        <div class="card-content">
+                            <p class="card-label">December 15, 2025</p>
+                            <h3 class="card-title">Welcome New Team Members</h3>
+                            <p class="card-description">LIFTS welcomes 12 new students to our engineering, media, and operations teams for the Spring 2026 semester.</p>
+                            <a href="updates.html" class="btn btn-ghost">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <article class="card reveal">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80" alt="CubeSat Progress">
+                        </div>
+                        <div class="card-content">
+                            <p class="card-label">November 28, 2025</p>
+                            <h3 class="card-title">CubeSat Design Review Complete</h3>
+                            <p class="card-description">Our CubeSat team successfully completed the preliminary design review, moving us closer to UPRM's first satellite.</p>
+                            <a href="updates.html" class="btn btn-ghost">Read More</a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="text-center" style="margin-top: var(--spacing-2xl);">
+                    <a href="updates.html" class="btn btn-secondary">View All Updates</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join / Careers CTA -->
+        <section class="section-fullscreen" id="join">
+            <div class="section-bg">
+                <img src="https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=1920&q=80" alt="Team collaboration">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="section-content text-center" style="padding: 0 var(--spacing-xl);">
+                <span class="section-label" style="color: var(--color-text-secondary);">Join Our Team</span>
+                <h2 style="font-size: var(--text-5xl); margin-bottom: var(--spacing-lg);">Be Part of Something Extraordinary</h2>
+                <p style="font-size: var(--text-lg); color: var(--color-text-secondary); max-width: 600px; margin: 0 auto var(--spacing-2xl);">Join LIFTS and gain hands-on experience in aerospace engineering, project management, media production, and more. We're always looking for passionate students ready to push boundaries.</p>
+                <div class="hero-actions" style="opacity: 1;">
+                    <a href="careers.html" class="btn btn-primary btn-lg">View Open Positions</a>
+                    <a href="about.html#team" class="btn btn-secondary btn-lg">Meet the Team</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsors & Affiliations -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Our Partners</span>
+                    <h2 class="section-title">Supported By</h2>
+                </div>
+                <div class="grid grid-4" style="align-items: center; justify-items: center; opacity: 0.7;">
+                    <div class="sponsor-logo">
+                        <img class="sponsor-img--large" src="images/contributors-logos/Puerto Rico Space Grant Consortium.png" alt="Puerto Rico Space Grant Consortium" />
+                    </div>
+                    <div class="sponsor-logo">
+                        <img class="sponsor-img--large" src="images/contributors-logos/Collins Aerospace.svg" alt="UPRM Seal" style="height:256px;">
+                    </div>
+                    <div class="sponsor-logo">
+                            <img class="sponsor-img--large" src="images/contributors-logos/seal-rum-uprm.svg" alt="UPRM Seal" style="height:256px;">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img class="sponsor-img--large" src="images/contributors-logos/NEBP logo alternate2 1703x1657.png" alt="UPRM Seal" style="height:256px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo/lifts-logo.svg" alt="LIFTS Logo" class="footer-logo">
+                    <p class="footer-description">Launch Initiatives for Technologies in Space — A student-led near-space research program at the University of Puerto Rico, Mayagüez.</p>
+                    <div class="footer-social">
+                        <a href="https://www.youtube.com/@LIFTS_UPRM" target="_blank" rel="noopener" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/liftspr.uprm/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/liftsuprm" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Missions</h4>
+                    <div class="footer-links">
+                        <a href="nexo.html" class="footer-link">NEXO</a>
+                        <a href="ascent.html" class="footer-link">ASCENT</a>
+                        <a href="cubesat.html" class="footer-link">CubeSat</a>
+                        <a href="missions.html" class="footer-link">All Missions</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Organization</h4>
+                    <div class="footer-links">
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="careers.html" class="footer-link">Careers</a>
+                        <a href="updates.html" class="footer-link">Updates</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <div class="footer-links">
+                        <a href="launches.html" class="footer-link">Launch Schedule</a>
+                        <a href="contributors.html" class="footer-link">Contributors</a>
+                        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 LIFTS - Launch Initiatives for Technologies in Space. University of Puerto Rico, Mayagüez.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="contributors.html">Contributors</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>

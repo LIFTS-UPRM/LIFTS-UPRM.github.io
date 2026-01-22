@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact LIFTS - Get in touch with the Launch Initiatives for Technologies in Space team at UPRM.">
+    <title>Contact | LIFTS</title>
+    <link rel="icon" href="images/logo/lifts-icon.svg">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo/lifts-logo.svg" alt="LIFTS Logo">
+            </a>
+            <nav class="nav-desktop">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="missions.html" class="nav-link">Missions</a>
+                    <a href="launches.html" class="nav-link">Launches</a>
+                    <a href="updates.html" class="nav-link">Updates</a>
+                    <a href="careers.html" class="nav-link">Careers</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </div>
+                <div class="nav-cta">
+                    <a href="#support" class="btn btn-secondary btn-sm">Support a Mission</a>
+                </div>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <nav class="nav-mobile" id="navMobile">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="missions.html" class="nav-link">Missions</a>
+        <a href="launches.html" class="nav-link">Launches</a>
+        <a href="updates.html" class="nav-link">Updates</a>
+        <a href="careers.html" class="nav-link">Careers</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="#support" class="btn btn-primary" style="margin-top: 2rem;">Support a Mission</a>
+    </nav>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero" style="min-height: 60vh;">
+            <div class="page-hero-bg">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80" alt="Contact background">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="page-hero-content">
+                <h1 class="page-hero-title">Contact Us</h1>
+                <p class="page-hero-subtitle">Have questions about our missions? Want to collaborate? Get in touch.</p>
+            </div>
+        </section>
+
+        <!-- Contact Form & Info -->
+        <section class="section">
+            <div class="container">
+                <div class="grid-2" style="gap: var(--spacing-3xl);">
+                    <!-- Contact Form -->
+                    <div class="reveal">
+                        <span class="section-label">Get In Touch</span>
+                        <h2 style="margin-bottom: var(--spacing-lg);">Send Us a Message</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="subject">Subject *</label>
+                                <select id="subject" name="subject" class="form-input" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="collaboration">Research Collaboration</option>
+                                    <option value="sponsorship">Sponsorship Opportunity</option>
+                                    <option value="media">Media Inquiry</option>
+                                    <option value="careers">Careers / Join Team</option>
+                                    <option value="education">Educational Outreach</option>
+                                    <option value="technical">Technical Question</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="message">Message *</label>
+                                <textarea id="message" name="message" class="form-input" rows="6" required placeholder="Tell us how we can help..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="reveal">
+                        <span class="section-label">Contact Information</span>
+                        <h2 style="margin-bottom: var(--spacing-lg);">Other Ways to Reach Us</h2>
+                        
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>University of Puerto Rico, Mayagüez<br>Department of Mechanical Engineering<br>Mayagüez, PR 00681</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:liftsuprm@gmail.com" style="color: var(--color-primary);">liftsuprm@gmail.com</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 6v6l4 2"/></svg>
+                                </div>
+                                <div>
+                                    <h4>Response Time</h4>
+                                    <p>We typically respond within 2-3 business days during the academic semester.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div style="margin-top: var(--spacing-2xl);">
+                            <h4 style="margin-bottom: var(--spacing-md);">Follow Us</h4>
+                            <div class="footer-social" style="justify-content: flex-start;">
+                                <a href="https://www.youtube.com/@LIFTS_UPRM" target="_blank" rel="noopener" aria-label="YouTube">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                                </a>
+                                <a href="https://www.instagram.com/liftspr.uprm/" target="_blank" rel="noopener" aria-label="Instagram">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                </a>
+                                <a href="https://www.linkedin.com/company/liftsuprm" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Section -->
+        <section class="section" id="support" style="background: var(--color-bg-secondary);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Support Our Mission</span>
+                    <h2 class="section-title">Partner With LIFTS</h2>
+                </div>
+                <div class="grid-3 reveal">
+                    <div class="card" style="padding: var(--spacing-2xl);">
+                        <h3 style="margin-bottom: var(--spacing-md);">Corporate Sponsorship</h3>
+                        <p class="card-description" style="margin-bottom: var(--spacing-lg);">Support our missions with financial or in-kind contributions. Sponsors receive recognition on our website, mission materials, and social media.</p>
+                        <a href="mailto:liftsuprm@gmail.com?subject=Corporate%20Sponsorship" class="btn btn-ghost">Contact Us</a>
+                    </div>
+                    <div class="card" style="padding: var(--spacing-2xl);">
+                        <h3 style="margin-bottom: var(--spacing-md);">Research Collaboration</h3>
+                        <p class="card-description" style="margin-bottom: var(--spacing-lg);">Partner with us to fly your payload or sensor on our high-altitude balloon missions. We offer payload space for research experiments.</p>
+                        <a href="mailto:liftsuprm@gmail.com?subject=Research%20Collaboration" class="btn btn-ghost">Contact Us</a>
+                    </div>
+                    <div class="card" style="padding: var(--spacing-2xl);">
+                        <h3 style="margin-bottom: var(--spacing-md);">Equipment Donation</h3>
+                        <p class="card-description" style="margin-bottom: var(--spacing-lg);">Donate equipment, components, or materials to support our engineering work. We can provide donation receipts for tax purposes.</p>
+                        <a href="mailto:liftsuprm@gmail.com?subject=Equipment%20Donation" class="btn btn-ghost">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section">
+            <div class="container" style="max-width: 800px;">
+                <div class="section-header">
+                    <span class="section-label">FAQ</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-list reveal">
+                    <div class="faq-item">
+                        <h3 class="faq-question">How can I join the LIFTS team?</h3>
+                        <p class="faq-answer">LIFTS is open to all UPRM students regardless of major. Visit our <a href="careers.html">Careers page</a> to see open positions and submit an application. We recruit at the beginning of each semester.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">Can non-UPRM students or community members participate?</h3>
+                        <p class="faq-answer">While team membership is limited to UPRM students, we welcome community members at our public launch events and educational outreach programs. Follow our social media for event announcements.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">How can my organization sponsor a mission?</h3>
+                        <p class="faq-answer">We offer sponsorship packages at various levels. Contact us at liftsuprm@gmail.com with the subject "Sponsorship Inquiry" and we'll send you our sponsorship prospectus.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">Can I fly my experiment on a LIFTS mission?</h3>
+                        <p class="faq-answer">Yes! We allocate payload space for external experiments on select missions. Reach out with details about your experiment including mass, dimensions, power requirements, and data needs.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">Where can I watch a LIFTS launch?</h3>
+                        <p class="faq-answer">Launch locations vary based on mission requirements and weather. Public launch viewing information is announced on our social media channels when available. Some missions may be live-streamed on YouTube.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">How do I request LIFTS for an educational presentation?</h3>
+                        <p class="faq-answer">We love sharing our work with schools and community groups! Contact us with the subject "Educational Outreach" including your organization, audience age group, and preferred dates.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo/lifts-logo.svg" alt="LIFTS Logo" class="footer-logo">
+                    <p class="footer-description">Launch Initiatives for Technologies in Space — A student-led near-space research program at the University of Puerto Rico, Mayagüez.</p>
+                    <div class="footer-social">
+                        <a href="https://www.youtube.com/@LIFTS_UPRM" target="_blank" rel="noopener" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/liftspr.uprm/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/liftsuprm" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Missions</h4>
+                    <div class="footer-links">
+                        <a href="nexo.html" class="footer-link">NEXO</a>
+                        <a href="ascent.html" class="footer-link">ASCENT</a>
+                        <a href="cubesat.html" class="footer-link">CubeSat</a>
+                        <a href="missions.html" class="footer-link">All Missions</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Organization</h4>
+                    <div class="footer-links">
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="careers.html" class="footer-link">Careers</a>
+                        <a href="updates.html" class="footer-link">Updates</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <div class="footer-links">
+                        <a href="launches.html" class="footer-link">Launch Schedule</a>
+                        <a href="contributors.html" class="footer-link">Contributors</a>
+                        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 LIFTS - Launch Initiatives for Technologies in Space. University of Puerto Rico, Mayagüez.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="contributors.html">Contributors</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

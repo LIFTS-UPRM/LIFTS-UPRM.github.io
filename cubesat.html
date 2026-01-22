@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CubeSat Program - UPRM's first student-built satellite initiative by LIFTS.">
+    <title>CubeSat | LIFTS</title>
+    <link rel="icon" href="images/logo/lifts-icon.svg">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo/lifts-logo.svg" alt="LIFTS Logo">
+            </a>
+            <nav class="nav-desktop">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="missions.html" class="nav-link">Missions</a>
+                    <a href="launches.html" class="nav-link">Launches</a>
+                    <a href="updates.html" class="nav-link">Updates</a>
+                    <a href="careers.html" class="nav-link">Careers</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-cta">
+                    <a href="contact.html#support" class="btn btn-secondary btn-sm">Support a Mission</a>
+                </div>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <nav class="nav-mobile" id="navMobile">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="missions.html" class="nav-link">Missions</a>
+        <a href="launches.html" class="nav-link">Launches</a>
+        <a href="updates.html" class="nav-link">Updates</a>
+        <a href="careers.html" class="nav-link">Careers</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html#support" class="btn btn-primary" style="margin-top: 2rem;">Support a Mission</a>
+    </nav>
+
+    <main>
+        <!-- Mission Hero -->
+        <section class="hero">
+            <div class="hero-bg">
+                <img src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=1920&q=80" alt="CubeSat in orbit">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="status-tag status-in-progress" style="margin-bottom: var(--spacing-md);">In Development</span>
+                <h1 class="hero-title">CubeSat Program</h1>
+                <p class="hero-subtitle">UPRM's first student-built satellite. A 1U CubeSat designed, built, and operated entirely by LIFTS students.</p>
+            </div>
+            <div class="hero-scroll">
+                <span>Scroll to explore</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </div>
+        </section>
+
+        <!-- Mission Overview -->
+        <section class="section">
+            <div class="container">
+                <div class="grid-2" style="gap: var(--spacing-3xl); align-items: center;">
+                    <div class="reveal">
+                        <span class="section-label">Overview</span>
+                        <h2 style="margin-bottom: var(--spacing-lg);">Program Objective</h2>
+                        <p style="color: var(--color-text-secondary); line-height: 1.8; margin-bottom: var(--spacing-lg);">The CubeSat Program represents LIFTS' most ambitious undertaking: designing, building, and launching the first student-built satellite from the University of Puerto Rico, Mayagüez. This 1U CubeSat (10cm × 10cm × 10cm) will demonstrate that Puerto Rican students have the capabilities to participate in real space missions.</p>
+                        <p style="color: var(--color-text-secondary); line-height: 1.8;">The satellite will carry scientific instruments to study Earth's ionosphere and test new communication technologies. Upon successful launch and deployment, it will operate in low Earth orbit for approximately one year, transmitting data to our ground station in Mayagüez.</p>
+                    </div>
+                    <div class="card reveal">
+                        <div class="card-content">
+                            <h3 style="margin-bottom: var(--spacing-lg);">Satellite Specifications</h3>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg);">
+                                <div>
+                                    <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Form Factor</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">1U CubeSat</p>
+                                </div>
+                                <div>
+                                    <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Dimensions</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">10×10×10 cm</p>
+                                </div>
+                                <div>
+                                    <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Mass</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">&lt;1.33 kg</p>
+                                </div>
+                                <div>
+                                    <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Target Orbit</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">~400 km LEO</p>
+                                </div>
+                                <div>
+                                    <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Mission Life</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">~1 year</p>
+                                </div>
+                                <div>
+                                    <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Status</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold); color: var(--color-info);">Design Phase</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subsystems -->
+        <section class="section" style="background: var(--color-bg-secondary);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Architecture</span>
+                    <h2 class="section-title">Satellite Subsystems</h2>
+                </div>
+                <div class="grid-3 reveal">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Structure (STR)</h3>
+                            <p class="card-description">Aluminum 6061-T6 frame compliant with CubeSat Design Specification. Houses all subsystems and provides mounting points for solar panels.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Electrical Power (EPS)</h3>
+                            <p class="card-description">Body-mounted solar cells with lithium-ion battery pack. Provides regulated power to all subsystems with overcurrent protection.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>On-Board Computer (OBC)</h3>
+                            <p class="card-description">ARM Cortex-M4 microcontroller running FreeRTOS. Handles command processing, data management, and subsystem coordination.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Communications (COM)</h3>
+                            <p class="card-description">UHF/VHF transceiver for telemetry and command. Amateur radio frequencies enable global ground station network support.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Attitude Control (ADCS)</h3>
+                            <p class="card-description">Magnetorquer-based attitude control with sun sensors and magnetometers for attitude determination.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Payload (PL)</h3>
+                            <p class="card-description">Ionospheric plasma probe and experimental SDR receiver for space weather research and communication experiments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Science Objectives -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Science</span>
+                    <h2 class="section-title">Research Objectives</h2>
+                </div>
+                <div class="grid-2 reveal">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Ionospheric Studies</h3>
+                            <p class="card-description" style="margin-bottom: var(--spacing-md);">Study the electron density and temperature of Earth's ionosphere, particularly over the Caribbean region:</p>
+                            <ul style="color: var(--color-text-secondary); font-size: var(--text-sm);">
+                                <li>• Equatorial ionospheric irregularities</li>
+                                <li>• Space weather effects on ionosphere</li>
+                                <li>• Radio signal propagation studies</li>
+                                <li>• Long-term ionospheric monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Technology Demonstration</h3>
+                            <p class="card-description" style="margin-bottom: var(--spacing-md);">Test new technologies developed by LIFTS students for future missions:</p>
+                            <ul style="color: var(--color-text-secondary); font-size: var(--text-sm);">
+                                <li>• Software-defined radio in orbit</li>
+                                <li>• Student-designed solar panels</li>
+                                <li>• Novel attitude determination algorithms</li>
+                                <li>• Ground station automation software</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Timeline -->
+        <section class="section" style="background: var(--color-bg-secondary);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Progress</span>
+                    <h2 class="section-title">Development Timeline</h2>
+                </div>
+                <div class="timeline reveal">
+                    <div class="timeline-item">
+                        <div class="timeline-marker" style="background: var(--color-success);"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Q3 2024</span>
+                            <h3>Project Initiation</h3>
+                            <p>CubeSat program launched. Initial team formation and requirements definition.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker" style="background: var(--color-success);"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Q4 2025</span>
+                            <h3>Preliminary Design Review</h3>
+                            <p>PDR completed successfully. Subsystem architectures approved by faculty advisors.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker" style="background: var(--color-warning);"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Q2 2026</span>
+                            <h3>Critical Design Review</h3>
+                            <p>Detailed designs finalized. Component procurement begins. Currently in progress.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Q4 2026</span>
+                            <h3>Assembly & Integration</h3>
+                            <p>Subsystem integration and spacecraft-level testing.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Q2 2027</span>
+                            <h3>Environmental Testing</h3>
+                            <p>Vibration, thermal-vacuum, and functional testing campaigns.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2028</span>
+                            <h3>Target Launch</h3>
+                            <p>Launch as secondary payload on commercial launch vehicle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ground Station -->
+        <section class="section">
+            <div class="container">
+                <div class="grid-2" style="gap: var(--spacing-3xl); align-items: center;">
+                    <div class="reveal">
+                        <span class="section-label">Operations</span>
+                        <h2 style="margin-bottom: var(--spacing-lg);">Ground Station</h2>
+                        <p style="color: var(--color-text-secondary); line-height: 1.8; margin-bottom: var(--spacing-lg);">LIFTS is developing a dedicated ground station on the UPRM campus to communicate with our CubeSat. The station will feature automated tracking antennas, a software-defined radio receiver, and mission control software developed by our students.</p>
+                        <p style="color: var(--color-text-secondary); line-height: 1.8;">The ground station will also serve as an educational facility, allowing students to learn about satellite operations and radio communications. We plan to join the SatNOGS network to provide additional tracking coverage for other amateur satellites.</p>
+                    </div>
+                    <div class="card reveal">
+                        <div class="card-content">
+                            <h3 style="margin-bottom: var(--spacing-lg);">Ground Station Specs</h3>
+                            <table class="tech-specs-table">
+                                <tr>
+                                    <td>Location</td>
+                                    <td>UPRM Campus, Mayagüez, PR</td>
+                                </tr>
+                                <tr>
+                                    <td>Uplink Frequency</td>
+                                    <td>145 MHz (VHF)</td>
+                                </tr>
+                                <tr>
+                                    <td>Downlink Frequency</td>
+                                    <td>437 MHz (UHF)</td>
+                                </tr>
+                                <tr>
+                                    <td>Antenna Type</td>
+                                    <td>Yagi with Az/El rotator</td>
+                                </tr>
+                                <tr>
+                                    <td>Software</td>
+                                    <td>Custom + GNURadio</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Involved -->
+        <section class="section cta-section">
+            <div class="cta-bg">
+                <img src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=1920&q=80" alt="Space background">
+            </div>
+            <div class="cta-overlay"></div>
+            <div class="cta-content">
+                <h2 class="cta-title">Help Us Reach Orbit</h2>
+                <p class="cta-description">The CubeSat program needs talented students and supporters to make UPRM's first satellite a reality.</p>
+                <div class="cta-actions">
+                    <a href="careers.html" class="btn btn-primary btn-lg">Join the Team</a>
+                    <a href="contact.html#support" class="btn btn-secondary btn-lg">Support the Mission</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo/lifts-logo.svg" alt="LIFTS Logo" class="footer-logo">
+                    <p class="footer-description">Launch Initiatives for Technologies in Space — A student-led near-space research program at the University of Puerto Rico, Mayagüez.</p>
+                    <div class="footer-social">
+                        <a href="https://www.youtube.com/@LIFTS_UPRM" target="_blank" rel="noopener" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/liftspr.uprm/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/liftsuprm" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Missions</h4>
+                    <div class="footer-links">
+                        <a href="nexo.html" class="footer-link">NEXO</a>
+                        <a href="ascent.html" class="footer-link">ASCENT</a>
+                        <a href="cubesat.html" class="footer-link">CubeSat</a>
+                        <a href="missions.html" class="footer-link">All Missions</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Organization</h4>
+                    <div class="footer-links">
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="careers.html" class="footer-link">Careers</a>
+                        <a href="updates.html" class="footer-link">Updates</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <div class="footer-links">
+                        <a href="launches.html" class="footer-link">Launch Schedule</a>
+                        <a href="contributors.html" class="footer-link">Contributors</a>
+                        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 LIFTS - Launch Initiatives for Technologies in Space. University of Puerto Rico, Mayagüez.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="contributors.html">Contributors</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
