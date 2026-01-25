@@ -21,7 +21,7 @@ To advance space technology and inspire the next generation of aerospace enginee
 - **Maximum Altitude:** 100,000+ feet (30+ km)
 - **Payload Capacity:** Up to 6 lbs
 - **Flight Duration:** 2-3 hours typical
-- **Recovery:** GPS-tracked parachute descent
+- **Recovery:** GPS/APRS-tracked parachute descent; NEXO recovered intact on private property near Tyler, TX (~200 miles from launch)
 - **Applications:** Atmospheric research, photography, sensor testing
 
 ### Sounding Rocket Program - ASCENT
@@ -67,7 +67,7 @@ To advance space technology and inspire the next generation of aerospace enginee
 
 - Multiple successful HAB missions
 - 100,000+ feet maximum altitude achieved
-- Successful payload recovery rate: 95%+
+- Successful payload recovery rate: 95%+ (NEXO recovered intact by recovery vessel "Smilin V" on private property near Tyler, TX)
 - Student training and certification programs
 - Industry partnerships and sponsorships
 

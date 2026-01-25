@@ -521,6 +521,14 @@ h6 { font-size: var(--text-base); }
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
 }
 
+/* Mission pages: tighten spacing between title and subtitle */
+.hero.hero-mission .hero-title {
+    margin-bottom: var(--spacing-md);
+}
+.hero.hero-mission .hero-subtitle {
+    margin-top: var(--spacing-sm);
+}
+
 .hero-actions {
     display: flex;
     gap: var(--spacing-lg);
