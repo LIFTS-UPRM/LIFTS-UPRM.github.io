@@ -74,7 +74,7 @@ function initCountdown() {
     
     if (countdown) {
         // Set target date (ASCENT Mission: March 15, 2026)
-        const targetDate = new Date('2026-06-15T10:00:00').getTime();
+        const targetDate = new Date('2026-05-14T00:00:00').getTime();
         
         function updateCountdown() {
             const now = new Date().getTime();
