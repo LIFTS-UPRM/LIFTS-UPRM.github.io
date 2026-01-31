@@ -51,7 +51,7 @@ missions:
     date_day: "08"
     date_year: "2024"
     location: "Austin, TX"
-    location_full: "Austin, TX (Smilin V Scout Ranch)"
+    location_full: "Austin, TX"
     launch_time: "12:30 p.m."
     max_altitude_ft: 95000
     max_altitude_display: "95,000 ft"
