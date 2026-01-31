@@ -101,27 +101,27 @@
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg);">
                                 <div>
                                     <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Target Date</p>
-                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">March 14, 2026</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">{{ missions.ascent.date_display }}</p>
                                 </div>
                                 <div>
                                     <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Launch Site</p>
-                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">TBD, Puerto Rico</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">{{ missions.ascent.location_full }}</p>
                                 </div>
                                 <div>
                                     <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Target Altitude</p>
-                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">100,000+ ft</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">{{ missions.ascent.target_altitude_display }}</p>
                                 </div>
                                 <div>
                                     <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Est. Flight Time</p>
-                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">~3 hours</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">{{ missions.ascent.est_flight_time }}</p>
                                 </div>
                                 <div>
                                     <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Payload Mass</p>
-                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">2.5 kg</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">{{ missions.ascent.payload_mass_display }}</p>
                                 </div>
                                 <div>
                                     <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Status</p>
-                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold); color: var(--color-warning);">upcoming</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold); color: var(--color-warning);">{{ missions.ascent.status }}</p>
                                 </div>
                             </div>
                         </div>

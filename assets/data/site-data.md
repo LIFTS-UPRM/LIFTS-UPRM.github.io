@@ -20,8 +20,8 @@ organization:
 # TEAM
 # =============================================================================
 team:
-  member_count: 17
-  member_count_display: "17+"
+  member_count: 18
+  member_count_display: "18+"
 
 # =============================================================================
 # AGGREGATE STATISTICS
@@ -60,6 +60,7 @@ missions:
     recovery_location: "Tyler, TX"
     recovery_distance: "~200 miles"
     recovery_status: "Recovered intact"
+    recovery_info: "Recovered intact near Tyler, TX (~200 miles from launch)"
 
   # ---------------------------------------------------------------------------
   # ASCENT Mission (Upcoming)
@@ -101,6 +102,7 @@ missions:
     mission_life: "~1 year"
     est_launch_year: 2028
     est_launch_year_display: "2028"
+    target_year: "2028"
 
 # =============================================================================
 # PROGRAMS (General Capabilities)

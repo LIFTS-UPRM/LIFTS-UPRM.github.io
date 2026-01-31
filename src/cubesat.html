@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ASCENT Mission - LIFTS' next high-altitude balloon mission carrying advanced scientific payloads.">
-    <title>ASCENT | LIFTS</title>
+    <meta name="description" content="CubeSat Program - UPRM's first student-built satellite initiative by LIFTS.">
+    <title>CubeSat | LIFTS</title>
     <link rel="icon" href="images/logo/lifts-icon.svg">
     <link rel="stylesheet" href="main.css">
-    <script src="scripts/site-data.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -53,31 +52,13 @@
         <!-- Mission Hero -->
         <section class="hero hero-mission">
             <div class="hero-bg">
-                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80" alt="ASCENT Mission">
+                <img src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=1920&q=80" alt="CubeSat in orbit">
             </div>
             <div class="hero-overlay"></div>
             <div class="hero-content">
-                <span class="status-tag status-upcoming" style="margin-bottom: var(--spacing-md);">Upcoming Mission</span>
-                <h1 class="hero-title">ASCENT</h1>
-                <p class="hero-subtitle">Advanced Science Carrier for Environmental and Near-space Technology. Our most ambitious high-altitude balloon mission to date.</p>
-                <div class="countdown" id="countdown" style="margin-top: var(--spacing-xl);">
-                    <div class="countdown-item">
-                        <span class="countdown-value" id="countdown-days">--</span>
-                        <span class="countdown-label">Days</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-value" id="countdown-hours">--</span>
-                        <span class="countdown-label">Hours</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-value" id="countdown-minutes">--</span>
-                        <span class="countdown-label">Minutes</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-value" id="countdown-seconds">--</span>
-                        <span class="countdown-label">Seconds</span>
-                    </div>
-                </div>
+                <span class="status-tag status-in-progress" style="margin-bottom: var(--spacing-md);">In Development</span>
+                <h1 class="hero-title">CubeSat Program</h1>
+                <p class="hero-subtitle">UPRM's first student-built satellite. A 1U CubeSat designed, built, and operated entirely by LIFTS students.</p>
             </div>
             <div class="hero-scroll">
                 <span>Scroll to explore</span>
@@ -91,37 +72,37 @@
                 <div class="grid-2" style="gap: var(--spacing-3xl); align-items: center;">
                     <div class="reveal">
                         <span class="section-label">Overview</span>
-                        <h2 style="margin-bottom: var(--spacing-lg);">Mission Objective</h2>
-                        <p style="color: var(--color-text-secondary); line-height: 1.8; margin-bottom: var(--spacing-lg);">ASCENT (Advanced Science Carrier for Environmental and Near-space Technology) represents LIFTS' second generation of high-altitude balloon missions. Building on the success of NEXO, ASCENT will carry a more sophisticated payload package designed for extended scientific research.</p>
-                        <p style="color: var(--color-text-secondary); line-height: 1.8;">The mission aims to reach altitudes exceeding 100,000 feet while conducting experiments in atmospheric science, radiation measurement, and biological studies. ASCENT will test new technologies developed by our team including improved telemetry systems and an upgraded camera array.</p>
+                        <h2 style="margin-bottom: var(--spacing-lg);">Program Objective</h2>
+                        <p style="color: var(--color-text-secondary); line-height: 1.8; margin-bottom: var(--spacing-lg);">The CubeSat Program represents LIFTS' most ambitious undertaking: designing, building, and launching the first student-built satellite from the University of Puerto Rico, Mayagüez. This 1U CubeSat (10cm × 10cm × 10cm) will demonstrate that Puerto Rican students have the capabilities to participate in real space missions.</p>
+                        <p style="color: var(--color-text-secondary); line-height: 1.8;">The satellite will carry scientific instruments to study Earth's ionosphere and test new communication technologies. Upon successful launch and deployment, it will operate in low Earth orbit for approximately one year, transmitting data to our ground station in Mayagüez.</p>
                     </div>
                     <div style="margin-top: 1rem" class="card reveal">
                         <div class="card-content">
-                            <h3 style="margin-bottom: var(--spacing-lg);">Mission Parameters</h3>
+                            <h3 style="margin-bottom: var(--spacing-lg);">Satellite Specifications</h3>
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg);">
                                 <div>
-                                    <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Target Date</p>
-                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">March 14, 2026</p>
+                                    <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Form Factor</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">{{ missions.cubesat.form_factor }}</p>
                                 </div>
                                 <div>
-                                    <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Launch Site</p>
-                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">TBD, Puerto Rico</p>
+                                    <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Dimensions</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">{{ missions.cubesat.dimensions }}</p>
                                 </div>
                                 <div>
-                                    <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Target Altitude</p>
-                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">100,000+ ft</p>
+                                    <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Mass</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">{{ missions.cubesat.mass }}</p>
                                 </div>
                                 <div>
-                                    <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Est. Flight Time</p>
-                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">~3 hours</p>
+                                    <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Target Orbit</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">{{ missions.cubesat.target_orbit_altitude }}</p>
                                 </div>
                                 <div>
-                                    <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Payload Mass</p>
-                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">2.5 kg</p>
+                                    <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Mission Life</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">{{ missions.cubesat.mission_life }}</p>
                                 </div>
                                 <div>
                                     <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Status</p>
-                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold); color: var(--color-warning);">upcoming</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold); color: var(--color-info);">{{ missions.cubesat.status }}</p>
                                 </div>
                             </div>
                         </div>
@@ -130,8 +111,56 @@
             </div>
         </section>
 
-        <!-- Scientific Objectives -->
+        <!-- Subsystems -->
         <section class="section" style="background: var(--color-bg-secondary);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Architecture</span>
+                    <h2 class="section-title">Satellite Subsystems</h2>
+                </div>
+                <div class="grid-3 reveal">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Structure (STR)</h3>
+                            <p class="card-description">Aluminum 6061-T6 frame compliant with CubeSat Design Specification. Houses all subsystems and provides mounting points for solar panels.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Electrical Power (EPS)</h3>
+                            <p class="card-description">Body-mounted solar cells with lithium-ion battery pack. Provides regulated power to all subsystems with overcurrent protection.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>On-Board Computer (OBC)</h3>
+                            <p class="card-description">ARM Cortex-M4 microcontroller running FreeRTOS. Handles command processing, data management, and subsystem coordination.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Communications (COM)</h3>
+                            <p class="card-description">UHF/VHF transceiver for telemetry and command. Amateur radio frequencies enable global ground station network support.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Attitude Control (ADCS)</h3>
+                            <p class="card-description">Magnetorquer-based attitude control with sun sensors and magnetometers for attitude determination.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Payload (PL)</h3>
+                            <p class="card-description">Ionospheric plasma probe and experimental SDR receiver for space weather research and communication experiments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Science Objectives -->
+        <section class="section">
             <div class="container">
                 <div class="section-header">
                     <span class="section-label">Science</span>
@@ -140,98 +169,26 @@
                 <div class="grid-2 reveal">
                     <div class="card">
                         <div class="card-content">
-                            <h3>Atmospheric Analysis</h3>
-                            <p class="card-description" style="margin-bottom: var(--spacing-md);">Comprehensive measurement of atmospheric conditions from ground level to the stratosphere, including:</p>
+                            <h3>Ionospheric Studies</h3>
+                            <p class="card-description" style="margin-bottom: var(--spacing-md);">Study the electron density and temperature of Earth's ionosphere, particularly over the Caribbean region:</p>
                             <ul style="color: var(--color-text-secondary); font-size: var(--text-sm);">
-                                <li>• Temperature and pressure profiles</li>
-                                <li>• Humidity gradients</li>
-                                <li>• Ozone concentration levels</li>
-                                <li>• UV radiation intensity</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Radiation Studies</h3>
-                            <p class="card-description" style="margin-bottom: var(--spacing-md);">Investigation of cosmic radiation at near-space altitudes using custom-built detectors:</p>
-                            <ul style="color: var(--color-text-secondary); font-size: var(--text-sm);">
-                                <li>• Cosmic ray flux measurement</li>
-                                <li>• Radiation dose accumulation</li>
-                                <li>• Particle energy spectrum</li>
-                                <li>• Shielding effectiveness tests</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Biological Experiment</h3>
-                            <p class="card-description" style="margin-bottom: var(--spacing-md);">Study of biological samples exposed to near-space conditions:</p>
-                            <ul style="color: var(--color-text-secondary); font-size: var(--text-sm);">
-                                <li>• Microorganism survival rates</li>
-                                <li>• DNA damage assessment</li>
-                                <li>• Temperature stress response</li>
-                                <li>• Pressure adaptation</li>
+                                <li>• Equatorial ionospheric irregularities</li>
+                                <li>• Space weather effects on ionosphere</li>
+                                <li>• Radio signal propagation studies</li>
+                                <li>• Long-term ionospheric monitoring</li>
                             </ul>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
                             <h3>Technology Demonstration</h3>
-                            <p class="card-description" style="margin-bottom: var(--spacing-md);">Testing of new technologies developed for future missions:</p>
+                            <p class="card-description" style="margin-bottom: var(--spacing-md);">Test new technologies developed by LIFTS students for future missions:</p>
                             <ul style="color: var(--color-text-secondary); font-size: var(--text-sm);">
-                                <li>• Upgraded LoRa telemetry system</li>
-                                <li>• New GPS tracking module</li>
-                                <li>• Improved thermal management</li>
-                                <li>• 360° camera system</li>
+                                <li>• Software-defined radio in orbit</li>
+                                <li>• Student-designed solar panels</li>
+                                <li>• Novel attitude determination algorithms</li>
+                                <li>• Ground station automation software</li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Payload Configuration -->
-        <section class="section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">Payload</span>
-                    <h2 class="section-title">Experiment Modules</h2>
-                </div>
-                <div class="grid-3 reveal">
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Primary Sensors</h3>
-                            <p class="card-description">BME280 environmental sensor, UV index sensor, Geiger-Müller tube for radiation detection, and precision pressure transducer.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Imaging Array</h3>
-                            <p class="card-description">Dual 4K cameras for Earth-horizon and zenith views, plus a 360° action camera for immersive footage.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Bio-Payload</h3>
-                            <p class="card-description">Sealed chamber containing bacterial samples with temperature monitoring for post-flight analysis.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Flight Computer</h3>
-                            <p class="card-description">Custom Arduino-based system handling data logging, sensor polling, and telemetry transmission at 10-second intervals.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Communication</h3>
-                            <p class="card-description">LoRa 915 MHz telemetry, APRS for amateur radio tracking, and cellular backup for recovery operations.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Power System</h3>
-                            <p class="card-description">Lithium primary batteries rated to -60°C with integrated voltage regulation and power monitoring.</p>
                         </div>
                     </div>
                 </div>
@@ -249,49 +206,90 @@
                     <div class="timeline-item">
                         <div class="timeline-marker" style="background: var(--color-success);"></div>
                         <div class="timeline-content">
-                            <span class="timeline-date">September 2025</span>
-                            <h3>Payload Selection Complete</h3>
-                            <p>Scientific payload manifest finalized with five experiment modules approved for flight.</p>
+                            <span class="timeline-date">Q3 2024</span>
+                            <h3>Project Initiation</h3>
+                            <p>CubeSat program launched. Initial team formation and requirements definition.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-marker" style="background: var(--color-success);"></div>
                         <div class="timeline-content">
-                            <span class="timeline-date">October 2025</span>
+                            <span class="timeline-date">Q4 2025</span>
                             <h3>Preliminary Design Review</h3>
-                            <p>Structural and electrical designs reviewed and approved by faculty mentors.</p>
+                            <p>PDR completed successfully. Subsystem architectures approved by faculty advisors.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-marker" style="background: var(--color-warning);"></div>
                         <div class="timeline-content">
-                            <span class="timeline-date">December 2025</span>
-                            <h3>Component Integration</h3>
-                            <p>All payload components assembled and integrated into flight structure. Currently in progress.</p>
+                            <span class="timeline-date">Q2 2026</span>
+                            <h3>Critical Design Review</h3>
+                            <p>Detailed designs finalized. Component procurement begins. Currently in progress.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <span class="timeline-date">January 2026</span>
-                            <h3>Systems Testing</h3>
-                            <p>Environmental chamber testing, communication range verification, and drop tests.</p>
+                            <span class="timeline-date">Q4 2026</span>
+                            <h3>Assembly & Integration</h3>
+                            <p>Subsystem integration and spacecraft-level testing.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <span class="timeline-date">February 2026</span>
-                            <h3>Flight Readiness Review</h3>
-                            <p>Final review and approval for flight. Recovery team training and launch site selection.</p>
+                            <span class="timeline-date">Q2 2027</span>
+                            <h3>Environmental Testing</h3>
+                            <p>Vibration, thermal-vacuum, and functional testing campaigns.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <span class="timeline-date">March 14, 2026</span>
-                            <h3>Launch</h3>
-                            <p>Target launch date, weather permitting.</p>
+                            <span class="timeline-date">2028</span>
+                            <h3>Target Launch</h3>
+                            <p>Launch as secondary payload on commercial launch vehicle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ground Station -->
+        <section class="section">
+            <div class="container">
+                <div class="grid-2" style="gap: var(--spacing-3xl); align-items: center;">
+                    <div class="reveal">
+                        <span class="section-label">Operations</span>
+                        <h2 style="margin-bottom: var(--spacing-lg);">Ground Station</h2>
+                        <p style="color: var(--color-text-secondary); line-height: 1.8; margin-bottom: var(--spacing-lg);">LIFTS is developing a dedicated ground station on the UPRM campus to communicate with our CubeSat. The station will feature automated tracking antennas, a software-defined radio receiver, and mission control software developed by our students.</p>
+                        <p style="color: var(--color-text-secondary); line-height: 1.8;">The ground station will also serve as an educational facility, allowing students to learn about satellite operations and radio communications. We plan to join the SatNOGS network to provide additional tracking coverage for other amateur satellites.</p>
+                    </div>
+                    <div style="margin-top: 1rem" class="card reveal">
+                        <div class="card-content">
+                            <h3 style="margin-bottom: var(--spacing-lg);">Ground Station Specs</h3>
+                            <table class="tech-specs-table">
+                                <tr>
+                                    <td>Location</td>
+                                    <td>UPRM Campus, Mayagüez, PR</td>
+                                </tr>
+                                <tr>
+                                    <td>Uplink Frequency</td>
+                                    <td>145 MHz (VHF)</td>
+                                </tr>
+                                <tr>
+                                    <td>Downlink Frequency</td>
+                                    <td>437 MHz (UHF)</td>
+                                </tr>
+                                <tr>
+                                    <td>Antenna Type</td>
+                                    <td>Yagi with Az/El rotator</td>
+                                </tr>
+                                <tr>
+                                    <td>Software</td>
+                                    <td>Custom + GNURadio</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -301,15 +299,15 @@
         <!-- Get Involved -->
         <section class="section cta-section">
             <div class="cta-bg">
-                <img src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=1920&q=80" alt="Space background">
+                <img src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=1920&q=80" alt="Space background">
             </div>
             <div class="cta-overlay"></div>
             <div class="cta-content">
-                <h2 class="cta-title">Follow the Mission</h2>
-                <p class="cta-description">Stay updated on ASCENT's progress and watch the launch live.</p>
+                <h2 class="cta-title">Help Us Reach Orbit</h2>
+                <p class="cta-description">The CubeSat program needs talented students and supporters to make UPRM's first satellite a reality.</p>
                 <div class="cta-actions">
-                    <a href="updates.html" class="btn btn-primary btn-lg">Mission Updates</a>
-                    <a href="contact.html#support" class="btn btn-secondary btn-lg">Support ASCENT</a>
+                    <a href="careers.html" class="btn btn-primary btn-lg">Join the Team</a>
+                    <a href="contact.html#support" class="btn btn-secondary btn-lg">Support the Mission</a>
                 </div>
             </div>
         </section>

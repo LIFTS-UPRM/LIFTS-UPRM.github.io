@@ -106,15 +106,15 @@
                         <div class="featured-event-meta">
                             <div class="featured-event-meta-item">
                                 <span class="featured-event-meta-label">Date</span>
-                                <span class="featured-event-meta-value">March 14, 2026</span>
+                                <span class="featured-event-meta-value">{{ missions.ascent.date_display }}</span>
                             </div>
                             <div class="featured-event-meta-item">
                                 <span class="featured-event-meta-label">Location</span>
-                                <span class="featured-event-meta-value">Mayagüez, PR</span>
+                                <span class="featured-event-meta-value">{{ missions.ascent.location }}</span>
                             </div>
                             <div class="featured-event-meta-item">
                                 <span class="featured-event-meta-label">Target Altitude</span>
-                                <span class="featured-event-meta-value">100,000+ ft</span>
+                                <span class="featured-event-meta-value">{{ missions.ascent.target_altitude_display }}</span>
                             </div>
                         </div>
                         <a href="ascent.html" class="btn btn-primary">View Mission Details</a>
@@ -144,8 +144,8 @@
                             </div>
                             <div class="card-content">
                                 <span class="status-tag status-completed">Completed</span>
-                                <h3 class="card-title">NEXO</h3>
-                                <p class="card-label">April 8, 2024 • Austin, TX</p>
+                                <h3 class="card-title">{{ missions.nexo.name }}</h3>
+                                <p class="card-label">{{ missions.nexo.date_display }} • {{ missions.nexo.location }}</p>
                                 <p class="card-description">Our first high-altitude balloon launch during the 2024 total solar eclipse as part of the Nationwide Eclipse Ballooning Project.</p>
                                 <a href="nexo.html" class="btn btn-ghost">View Mission</a>
                             </div>
@@ -160,8 +160,8 @@
                             </div>
                             <div class="card-content">
                                 <span class="status-tag status-upcoming">Upcoming</span>
-                                <h3 class="card-title">ASCENT</h3>
-                                <p class="card-label">March 14, 2026 • Mayagüez, PR</p>
+                                <h3 class="card-title">{{ missions.ascent.name }}</h3>
+                                <p class="card-label">{{ missions.ascent.date_display }} • {{ missions.ascent.location }}</p>
                                 <p class="card-description">Advanced Stratospheric Collection and Environmental Testing mission carrying multiple scientific payloads.</p>
                                 <a href="ascent.html" class="btn btn-ghost">View Mission</a>
                             </div>
@@ -196,19 +196,19 @@
             <div class="container">
                 <div class="stats reveal">
                     <div class="stat-item">
-                        <span class="stat-value">1</span>
+                        <span class="stat-value">{{ stats.missions_completed }}</span>
                         <span class="stat-label">Missions Completed</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-value">95K+</span>
+                        <span class="stat-value">{{ stats.max_altitude_display }}</span>
                         <span class="stat-label">Max Altitude (ft)</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-value">18+</span>
+                        <span class="stat-value">{{ team.member_count_display }}</span>
                         <span class="stat-label">Team Members</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-value">100%</span>
+                        <span class="stat-value">{{ stats.recovery_rate }}</span>
                         <span class="stat-label">Recovery Rate</span>
                     </div>
                 </div>

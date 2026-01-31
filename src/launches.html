@@ -72,15 +72,15 @@
                 <div class="launch-list">
                     <a href="ascent.html" class="launch-item reveal">
                         <div class="launch-date">
-                            <span style="font-size: var(--text-2xl); display: block;">MAR</span>
-                            <span style="font-size: var(--text-4xl); line-height: 1;">14</span>
-                            <span style="font-size: var(--text-sm); color: var(--color-text-muted);">2026</span>
+                            <span style="font-size: var(--text-2xl); display: block;">{{ missions.ascent.date_month }}</span>
+                            <span style="font-size: var(--text-4xl); line-height: 1;">{{ missions.ascent.date_day }}</span>
+                            <span style="font-size: var(--text-sm); color: var(--color-text-muted);">{{ missions.ascent.date_year }}</span>
                         </div>
                         <div class="launch-name">
-                            <h3 style="margin-bottom: var(--spacing-xs);">ASCENT</h3>
-                            <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">Advanced Science Carrier for Environmental and Near-space Technology</p>
+                            <h3 style="margin-bottom: var(--spacing-xs);">{{ missions.ascent.name }}</h3>
+                            <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">{{ missions.ascent.full_name }}</p>
                         </div>
-                        <div class="launch-location">Mayagüez, PR</div>
+                        <div class="launch-location">{{ missions.ascent.location }}</div>
                         <div>
                             <span class="status-tag status-upcoming">Scheduled</span>
                         </div>
@@ -100,15 +100,15 @@
                 <div class="launch-list">
                     <a href="nexo.html" class="launch-item reveal">
                         <div class="launch-date">
-                            <span style="font-size: var(--text-2xl); display: block;">APR</span>
-                            <span style="font-size: var(--text-4xl); line-height: 1;">08</span>
-                            <span style="font-size: var(--text-sm); color: var(--color-text-muted);">2024</span>
+                            <span style="font-size: var(--text-2xl); display: block;">{{ missions.nexo.date_month }}</span>
+                            <span style="font-size: var(--text-4xl); line-height: 1;">{{ missions.nexo.date_day }}</span>
+                            <span style="font-size: var(--text-sm); color: var(--color-text-muted);">{{ missions.nexo.date_year }}</span>
                         </div>
                         <div class="launch-name">
-                            <h3 style="margin-bottom: var(--spacing-xs);">NEXO</h3>
-                            <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">Space Navigator for Exploration and Observation</p>
+                            <h3 style="margin-bottom: var(--spacing-xs);">{{ missions.nexo.name }}</h3>
+                            <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">{{ missions.nexo.full_name }}</p>
                         </div>
-                        <div class="launch-location">Austin, TX (Smilin V Scout Ranch) — 12:30 p.m.</div>
+                        <div class="launch-location">{{ missions.nexo.location_full }} — {{ missions.nexo.launch_time }}</div>
                         <div>
                             <span class="status-tag status-completed">Success</span>
                         </div>
@@ -170,19 +170,19 @@
             <div class="container">
                 <div class="stats reveal">
                     <div class="stat-item">
-                        <span class="stat-value">1</span>
+                        <span class="stat-value">{{ stats.missions_completed }}</span>
                         <span class="stat-label">Completed Launches</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-value">2</span>
+                        <span class="stat-value">{{ stats.missions_planned }}</span>
                         <span class="stat-label">Planned Launches</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-value">100%</span>
+                        <span class="stat-value">{{ stats.recovery_rate }}</span>
                         <span class="stat-label">Success Rate</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-value">95K+</span>
+                        <span class="stat-value">{{ stats.max_altitude_display }}</span>
                         <span class="stat-label">Max Altitude (ft)</span>
                     </div>
                 </div>

@@ -35,8 +35,9 @@ except ImportError:
 REPO_ROOT = Path(__file__).parent
 DATA_FILE = REPO_ROOT / "assets" / "data" / "site-data.md"
 JS_OUTPUT = REPO_ROOT / "scripts" / "site-data.js"
+SRC_DIR = REPO_ROOT / "src"  # Template source directory
 
-# HTML files to process (relative to repo root)
+# HTML files to process (relative to src/ directory, output to root)
 HTML_FILES = [
     "index.html",
     "ascent.html",
@@ -44,12 +45,6 @@ HTML_FILES = [
     "launches.html",
     "nexo.html",
     "cubesat.html",
-    "about.html",
-    "contact.html",
-    "careers.html",
-    "updates.html",
-    "contributors.html",
-    "privacy.html",
 ]
 
 # Placeholder pattern: {{ key.path.to.value }}
@@ -221,12 +216,12 @@ def replace_placeholders(
                 print(f"    {key_path} → {str_value[:50]}{'...' if len(str_value) > 50 else ''}")
             return str_value
         else:
-            # Leave placeholder unchanged if key not found
             if verbose:
                 print(f"    WARNING: {key_path} not found in data")
             return match.group(0)
 
     new_content = PLACEHOLDER_PATTERN.sub(replacer, content)
+    
     return new_content, count
 
 
@@ -278,13 +273,13 @@ def main():
     data = load_site_data(DATA_FILE)
     print(f"   ✓ Loaded {count_data_keys(data)} data keys")
 
-    # Resolve HTML file paths
-    html_paths = [REPO_ROOT / f for f in HTML_FILES]
+    # Resolve source HTML file paths (templates in src/)
+    src_paths = [SRC_DIR / f for f in HTML_FILES]
 
-    # Validate placeholders
-    print(f"\n🔍 Validating placeholders in {len(HTML_FILES)} HTML files...")
+    # Validate placeholders in source templates
+    print(f"\n🔍 Validating placeholders in {len(HTML_FILES)} template files...")
     file_placeholders, missing_keys, used_keys = validate_placeholders(
-        html_paths, data, verbose=args.verbose
+        src_paths, data, verbose=args.verbose
     )
 
     # Report validation results
@@ -312,27 +307,33 @@ def main():
         print("\n✓ Validation complete (--validate mode, no changes made)")
         sys.exit(0 if not missing_keys else 1)
 
-    # Process HTML files
-    print(f"\n{'📝 Preview of changes:' if args.dry_run else '✏️  Updating HTML files:'}")
+    # Process HTML files (read from src/, write to root)
+    print(f"\n{'📝 Preview of changes:' if args.dry_run else '✏️  Building HTML files (src/ → root):'}")
 
     total_replacements = 0
     files_modified = 0
 
-    for html_file in html_paths:
-        if not html_file.exists():
+    for filename in HTML_FILES:
+        src_file = SRC_DIR / filename
+        out_file = REPO_ROOT / filename
+        
+        if not src_file.exists():
             continue
 
-        content = html_file.read_text(encoding="utf-8")
+        content = src_file.read_text(encoding="utf-8")
         placeholders = find_placeholders(content)
 
         if not placeholders:
+            # Still copy the file even if no placeholders
+            if not args.dry_run:
+                out_file.write_text(content, encoding="utf-8")
             continue
 
         if args.verbose:
-            print(f"\n  {html_file.name}:")
+            print(f"\n  {filename}:")
 
         new_content, count = replace_placeholders(
-            content, data, verbose=args.verbose, file_name=html_file.name
+            content, data, verbose=args.verbose, file_name=filename
         )
 
         if count > 0:
@@ -340,12 +341,12 @@ def main():
             files_modified += 1
 
             if not args.dry_run:
-                html_file.write_text(new_content, encoding="utf-8")
+                out_file.write_text(new_content, encoding="utf-8")
                 if not args.verbose:
-                    print(f"   ✓ {html_file.name}: {count} replacement(s)")
+                    print(f"   ✓ {filename}: {count} replacement(s)")
             else:
                 if not args.verbose:
-                    print(f"   → {html_file.name}: {count} replacement(s)")
+                    print(f"   → {filename}: {count} replacement(s)")
 
     # Generate JavaScript data file
     print(f"\n{'📝 Would generate:' if args.dry_run else '✏️  Generating:'} {JS_OUTPUT.relative_to(REPO_ROOT)}")

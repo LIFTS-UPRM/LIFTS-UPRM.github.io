@@ -88,27 +88,27 @@
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg);">
                                 <div>
                                     <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Launch Date</p>
-                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">April 8, 2024</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">{{ missions.nexo.date_display }}</p>
                                 </div>
                                 <div>
                                     <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Launch Site</p>
-                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">Austin, TX (Smilin V Scout Ranch) — 12:30 p.m.</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">{{ missions.nexo.location_full }} — {{ missions.nexo.launch_time }}</p>
                                 </div>
                                 <div>
                                     <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Max Altitude</p>
-                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">95,000 ft</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">{{ missions.nexo.max_altitude_display }}</p>
                                 </div>
                                 <div>
                                     <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Flight Duration</p>
-                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">~4.5 hours (tracked)</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold);">{{ missions.nexo.flight_duration_tracked }}</p>
                                 </div>
                                 <div>
                                     <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Status</p>
-                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold); color: var(--color-success);">completed</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold); color: var(--color-success);">{{ missions.nexo.status }}</p>
                                 </div>
                                 <div>
                                     <p style="color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em;">Recovery</p>
-                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold); color: var(--color-success);">Recovered intact near Tyler, TX (~200 miles from launch)</p>
+                                    <p style="font-size: var(--text-lg); font-family: var(--font-bold); color: var(--color-success);">{{ missions.nexo.recovery_info }}</p>
                                 </div>
                             </div>
                         </div>

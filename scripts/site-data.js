@@ -16,8 +16,8 @@ window.SITE_DATA = {
     "founded": "January 2024"
   },
   "team": {
-    "member_count": 17,
-    "member_count_display": "17+"
+    "member_count": 18,
+    "member_count_display": "18+"
   },
   "stats": {
     "missions_completed": 1,
@@ -46,7 +46,8 @@ window.SITE_DATA = {
       "flight_duration_tracked": "~4.5 hours (tracked)",
       "recovery_location": "Tyler, TX",
       "recovery_distance": "~200 miles",
-      "recovery_status": "Recovered intact"
+      "recovery_status": "Recovered intact",
+      "recovery_info": "Recovered intact near Tyler, TX (~200 miles from launch)"
     },
     "ascent": {
       "name": "ASCENT",
@@ -81,7 +82,8 @@ window.SITE_DATA = {
       "target_orbit_altitude": "~400 km LEO",
       "mission_life": "~1 year",
       "est_launch_year": 2028,
-      "est_launch_year_display": "2028"
+      "est_launch_year_display": "2028",
+      "target_year": "2028"
     }
   },
   "programs": {

@@ -86,22 +86,22 @@
                         <div class="card-content">
                             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-md);">
                                 <span class="status-tag status-completed">Completed</span>
-                                <span class="card-label">April 8, 2024</span>
+                                <span class="card-label">{{ missions.nexo.date_display }}</span>
                             </div>
-                            <h3 class="card-title">NEXO</h3>
+                            <h3 class="card-title">{{ missions.nexo.name }}</h3>
                             <p class="card-description">Our inaugural high-altitude balloon mission conducted during the 2024 total solar eclipse in Austin, Texas. Part of the Nationwide Eclipse Ballooning Project (NEBP), NEXO captured atmospheric data and stunning imagery during totality.</p>
                             <div style="display: flex; gap: var(--spacing-lg); margin-bottom: var(--spacing-lg); flex-wrap: wrap;">
                                 <div>
                                     <span class="card-label">Max Altitude</span>
-                                    <p style="font-family: var(--font-bold);">95,000 ft</p>
+                                    <p style="font-family: var(--font-bold);">{{ missions.nexo.max_altitude_display }}</p>
                                 </div>
                                 <div>
                                     <span class="card-label">Flight Duration</span>
-                                    <p style="font-family: var(--font-bold);">3.5 hours</p>
+                                    <p style="font-family: var(--font-bold);">{{ missions.nexo.flight_duration }}</p>
                                 </div>
                                 <div>
                                     <span class="card-label">Location</span>
-                                    <p style="font-family: var(--font-bold);">Austin, TX (Smilin V Scout Ranch)</p>
+                                    <p style="font-family: var(--font-bold);">{{ missions.nexo.location_full }}</p>
                                 </div>
                             </div>
                             <a href="nexo.html" class="btn btn-secondary">View Mission Details</a>
@@ -116,22 +116,22 @@
                         <div class="card-content">
                             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-md);">
                                 <span class="status-tag status-upcoming">Upcoming</span>
-                                <span class="card-label">March 14, 2026</span>
+                                <span class="card-label">{{ missions.ascent.date_display }}</span>
                             </div>
-                            <h3 class="card-title">ASCENT</h3>
+                            <h3 class="card-title">{{ missions.ascent.name }}</h3>
                             <p class="card-description">Advanced Stratospheric Collection and Environmental Testing. Our most ambitious HAB mission featuring multiple scientific payloads including atmospheric sensors, radiation detectors, and biological experiments.</p>
                             <div style="display: flex; gap: var(--spacing-lg); margin-bottom: var(--spacing-lg); flex-wrap: wrap;">
                                 <div>
                                     <span class="card-label">Target Altitude</span>
-                                    <p style="font-family: var(--font-bold);">100,000+ ft</p>
+                                    <p style="font-family: var(--font-bold);">{{ missions.ascent.target_altitude_display }}</p>
                                 </div>
                                 <div>
                                     <span class="card-label">Payload Count</span>
-                                    <p style="font-family: var(--font-bold);">5</p>
+                                    <p style="font-family: var(--font-bold);">{{ missions.ascent.payload_count }}</p>
                                 </div>
                                 <div>
                                     <span class="card-label">Location</span>
-                                    <p style="font-family: var(--font-bold);">Mayagüez, PR</p>
+                                    <p style="font-family: var(--font-bold);">{{ missions.ascent.location }}</p>
                                 </div>
                             </div>
                             <a href="ascent.html" class="btn btn-secondary">View Mission Details</a>
@@ -146,22 +146,22 @@
                         <div class="card-content">
                             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-md);">
                                 <span class="status-tag status-in-progress">In Progress</span>
-                                <span class="card-label">in-progress</span>
+                                <span class="card-label">{{ missions.cubesat.status }}</span>
                             </div>
-                            <h3 class="card-title">CubeSat Program</h3>
+                            <h3 class="card-title">{{ missions.cubesat.name }}</h3>
                             <p class="card-description">LIFTS' long-term goal to design, build, and launch UPRM's first student-built CubeSat. Currently in the preliminary design phase, this 1U CubeSat will carry Earth observation and communications experiments.</p>
                             <div style="display: flex; gap: var(--spacing-lg); margin-bottom: var(--spacing-lg); flex-wrap: wrap;">
                                 <div>
                                     <span class="card-label">Form Factor</span>
-                                    <p style="font-family: var(--font-bold);">1U CubeSat</p>
+                                    <p style="font-family: var(--font-bold);">{{ missions.cubesat.form_factor }}</p>
                                 </div>
                                 <div>
                                     <span class="card-label">Target Orbit</span>
-                                    <p style="font-family: var(--font-bold);">~400 km LEO</p>
+                                    <p style="font-family: var(--font-bold);">{{ missions.cubesat.target_orbit_altitude }}</p>
                                 </div>
                                 <div>
                                     <span class="card-label">Est. Launch</span>
-                                    <p style="font-family: var(--font-bold);">2028</p>
+                                    <p style="font-family: var(--font-bold);">{{ missions.cubesat.target_year }}</p>
                                 </div>
                             </div>
                             <a href="cubesat.html" class="btn btn-secondary">View Progress</a>
@@ -180,19 +180,19 @@
                 </div>
                 <div class="stats reveal">
                     <div class="stat-item">
-                        <span class="stat-value">1</span>
+                        <span class="stat-value">{{ stats.missions_completed }}</span>
                         <span class="stat-label">Completed Missions</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-value">2</span>
+                        <span class="stat-value">{{ stats.missions_planned }}</span>
                         <span class="stat-label">Planned Missions</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-value">100%</span>
+                        <span class="stat-value">{{ stats.recovery_rate }}</span>
                         <span class="stat-label">Recovery Rate</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-value">95K+</span>
+                        <span class="stat-value">{{ stats.max_altitude_display }}</span>
                         <span class="stat-label">Max Altitude (ft)</span>
                     </div>
                 </div>
