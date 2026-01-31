@@ -73,8 +73,10 @@ function initCountdown() {
     const countdown = document.getElementById('countdown');
     
     if (countdown) {
-        // Set target date (ASCENT Mission: March 15, 2026)
-        const targetDate = new Date('2026-05-14T00:00:00').getTime();
+        // Get target date from site data (ASCENT Mission)
+        // Falls back to hardcoded date if SITE_DATA not loaded
+        const dateISO = window.SITE_DATA?.missions?.ascent?.date_iso || '2026-03-14T00:00:00';
+        const targetDate = new Date(dateISO).getTime();
         
         function updateCountdown() {
             const now = new Date().getTime();

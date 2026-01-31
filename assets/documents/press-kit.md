@@ -13,7 +13,7 @@
 | **Organization** | LIFTS - Launch Initiatives for Technologies in Space |
 | **Founded** | University of Puerto Rico at Mayagüez |
 | **Focus** | High-Altitude Balloons, Sounding Rockets, CubeSats |
-| **Team Size** | 50+ active members |
+| **Team Size** | 17+ active members |
 | **Website** | [lifts.uprm.edu](https://lifts.uprm.edu) |
 
 ---

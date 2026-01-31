@@ -1,0 +1,4 @@
+# LIFTS Static Site Generator Dependencies
+# Install with: pip install -r requirements.txt
+
+pyyaml>=6.0

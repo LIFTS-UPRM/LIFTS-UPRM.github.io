@@ -75,8 +75,8 @@ To advance space technology and inspire the next generation of aerospace enginee
 
 ## Contact
 
-**Website:** lifts.uprm.edu  
-**Email:** info@lifts.uprm.edu  
+**Website:** liftspr.edu  
+**Email:** lifts@upr.edu  
 **Location:** University of Puerto Rico at Mayagüez, Puerto Rico
 
 ---

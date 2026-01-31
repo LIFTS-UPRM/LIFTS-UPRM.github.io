@@ -70,6 +70,67 @@ Website/
 - **Text:** #ffffff / #a0a0a0
 - **Accent:** #ffffff
 
+## Build System
+
+The website uses a Python-based static site generator to centralize numeric data (dates, statistics, mission parameters) in a single YAML file.
+
+### Setup
+
+```bash
+# Install dependencies (one time)
+pip install -r requirements.txt
+```
+
+### Editing Site Data
+
+All numeric values (dates, heights, team counts, etc.) are defined in:
+
+```
+assets/data/site-data.md
+```
+
+Edit the YAML front matter in that file to update any values.
+
+### Building the Site
+
+After editing `site-data.md`, run the build script:
+
+```bash
+# Build site (replaces placeholders in HTML with values from site-data.md)
+python build.py
+
+# Preview changes without writing (dry run)
+python build.py --dry-run
+
+# Show detailed replacement info
+python build.py --verbose
+
+# Only validate placeholders (no changes)
+python build.py --validate
+```
+
+The script will:
+1. Parse YAML data from `assets/data/site-data.md`
+2. Replace all `{{ key.path }}` placeholders in HTML files
+3. Generate `scripts/site-data.js` for JavaScript access (countdown timer)
+4. Validate that all placeholders have matching data keys
+
+### Placeholder Syntax
+
+In HTML files, use `{{ key.path }}` syntax:
+```html
+<span>{{ missions.ascent.date_display }}</span>  <!-- March 14, 2026 -->
+<span>{{ stats.missions_completed }}</span>       <!-- 1 -->
+<span>{{ team.member_count_display }}</span>      <!-- 17+ -->
+```
+
+### Workflow
+
+1. Edit `assets/data/site-data.md`
+2. Run `python build.py`
+3. Test locally (open HTML files in browser)
+4. Commit and push to deploy to GitHub Pages
+
 ## Development
 
 Open `index.html` in a browser or use Live Server extension.
