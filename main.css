@@ -554,6 +554,58 @@ h6 { font-size: var(--text-base); }
     opacity: 0.7;
 }
 
+/* ---------- Trust Bar ---------- */
+.trust-bar {
+    background: var(--color-bg-secondary);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--spacing-lg) 0;
+}
+
+.trust-bar-inner {
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+    padding: 0 var(--spacing-xl);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2xl);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trust-bar-label {
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+}
+
+.trust-bar-logos {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2xl);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trust-bar-logos img {
+    height: 32px;
+    width: auto;
+    opacity: 0.65;
+    filter: grayscale(1) brightness(2);
+    transition: opacity var(--transition-base);
+}
+
+.trust-bar-logos img:hover {
+    opacity: 1;
+}
+
+.trust-bar-logos .trust-invert {
+    filter: invert(1) grayscale(1) brightness(1.5);
+    mix-blend-mode: screen;
+}
+
 /* ---------- Full Screen Sections ---------- */
 .section-fullscreen {
     position: relative;
@@ -904,6 +956,20 @@ h6 { font-size: var(--text-base); }
     letter-spacing: 0.1em;
     color: var(--color-text-muted);
     margin-top: var(--spacing-xs);
+}
+
+.countdown-cta {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.countdown-cta-note {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    margin: 0;
 }
 
 .featured-event-image {
@@ -2054,6 +2120,22 @@ h6 { font-size: var(--text-base); }
 
 .faq-answer a:hover {
     color: var(--color-accent-hover);
+}
+
+/* ---------- Our Why Section ---------- */
+.our-why {
+    padding: var(--spacing-4xl) 0;
+    background: var(--color-bg-primary);
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+}
+
+.our-why-text {
+    font-size: var(--text-xl);
+    color: var(--color-text-secondary);
+    max-width: 760px;
+    margin: 0 auto var(--spacing-2xl);
+    line-height: 1.7;
 }
 
 /* ---------- Newsletter Form ---------- */

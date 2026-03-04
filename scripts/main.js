@@ -428,6 +428,43 @@ function initParallax() {
     }
 }
 
+/* ---------- Stat Count-Up Animation ---------- */
+function initStatCounters() {
+    const statValues = document.querySelectorAll('#statsGrid .stat-value');
+    if (!statValues.length) return;
+
+    const parseStatValue = (text) => {
+        const match = text.match(/^([\d.]+)(.*)$/);
+        if (!match) return { num: 0, suffix: text };
+        return { num: parseFloat(match[1]), suffix: match[2] };
+    };
+
+    const animateCounter = (el, target, suffix, duration) => {
+        const start = performance.now();
+        const update = (now) => {
+            const elapsed = now - start;
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            const current = Math.round(eased * target);
+            el.textContent = current + suffix;
+            if (progress < 1) requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const el = entry.target;
+            const { num, suffix } = parseStatValue(el.textContent.trim());
+            if (num > 0) animateCounter(el, num, suffix, 1500);
+            observer.unobserve(el);
+        });
+    }, { threshold: 0.5 });
+
+    statValues.forEach((el) => observer.observe(el));
+}
+
 // Initialize additional features when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
     initLightbox();
@@ -437,4 +474,5 @@ document.addEventListener('DOMContentLoaded', function() {
     initHorizontalScroll();
     initLazyLoad();
     initParallax();
+    initStatCounters();
 });
