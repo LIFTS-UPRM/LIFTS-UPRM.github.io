@@ -72,21 +72,6 @@
     --z-modal: 300;
 }
 
-/* ---------- Font Faces ---------- */
-@font-face {
-    font-family: 'D-DIN-Bold';
-    src: url('fonts/d-din/D-DIN-Bold.otf') format('opentype');
-    font-weight: bold;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'D-DIN-Regular';
-    src: url('fonts/d-din/D-DIN.otf') format('opentype');
-    font-weight: normal;
-    font-display: swap;
-}
-
 /* ---------- Reset & Base ---------- */
 *, *::before, *::after {
     margin: 0;

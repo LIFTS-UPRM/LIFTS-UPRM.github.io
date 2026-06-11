@@ -1,0 +1,278 @@
+{
+  "organization": {
+    "name": "LIFTS",
+    "full_name": "Launch Initiatives for Technologies in Space",
+    "type": "Student Aerospace Research Organization",
+    "institution": "University of Puerto Rico at Mayaguez",
+    "institution_short": "UPRM",
+    "website": "lifts-uprm.github.io",
+    "email": "lifts@uprm.edu",
+    "founded": "January 2024",
+    "tagline": "Advancing near-space research and inspiring the next generation of aerospace engineers from Puerto Rico.",
+    "description": "LIFTS is a student-led near-space research program at UPRM conducting high-altitude balloon missions, payload development, and CubeSat research."
+  },
+  "team": {
+    "member_count": 18,
+    "member_count_display": "18+"
+  },
+  "stats": {
+    "missions_completed": 1,
+    "missions_planned": 2,
+    "max_altitude_ft": 95000,
+    "max_altitude_display": "95K+",
+    "recovery_rate": "100%"
+  },
+  "missions": {
+    "nexo": {
+      "slug": "nexo",
+      "name": "NEXO",
+      "full_name": "Space Navigator for Exploration and Observation",
+      "status": "completed",
+      "status_display": "Completed",
+      "date": "2024-04-08",
+      "date_display": "April 8, 2024",
+      "date_month": "APR",
+      "date_day": "08",
+      "date_year": "2024",
+      "location": "Austin, TX",
+      "location_full": "Austin, TX",
+      "launch_time": "12:30 p.m.",
+      "max_altitude_ft": 95000,
+      "max_altitude_display": "95,000 ft",
+      "flight_duration": "3.5 hours",
+      "flight_duration_tracked": "~4.5 hours tracked",
+      "recovery_location": "Tyler, TX",
+      "recovery_distance": "~200 miles",
+      "recovery_status": "Recovered intact",
+      "recovery_info": "Recovered intact near Tyler, TX, about 200 miles from launch",
+      "image": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=1200&q=80",
+      "summary": "Our first high-altitude balloon launch during the 2024 total solar eclipse as part of the Nationwide Eclipse Ballooning Project.",
+      "highlights": [
+        "Completed eclipse-day launch operations in Austin, Texas.",
+        "Tracked the payload through a multi-hour near-space flight.",
+        "Recovered the flight system intact near Tyler, Texas."
+      ],
+      "objectives": [
+        "Collect near-space imagery and environmental data during eclipse conditions.",
+        "Validate team operations for launch, tracking, and recovery.",
+        "Build the foundation for future Puerto Rico-led balloon missions."
+      ]
+    },
+    "ascent": {
+      "slug": "ascent",
+      "name": "ASCENT",
+      "full_name": "Advanced Science Carrier for Environmental and Near-space Technology",
+      "status": "upcoming",
+      "status_display": "Upcoming",
+      "date": "2026-03-14",
+      "date_display": "March 14, 2026",
+      "date_iso": "2026-03-14T00:00:00",
+      "date_month": "MAR",
+      "date_day": "14",
+      "date_year": "2026",
+      "location": "Mayaguez, PR",
+      "location_full": "TBD, Puerto Rico",
+      "target_altitude_ft": 100000,
+      "target_altitude_display": "100,000+ ft",
+      "target_altitude_short": "100,000 ft",
+      "est_flight_time": "~3 hours",
+      "payload_mass_kg": 2.5,
+      "payload_mass_display": "2.5 kg",
+      "payload_count": 5,
+      "payload_count_display": "5 modules",
+      "image": "https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=1200&q=80",
+      "summary": "A Puerto Rico-based high-altitude balloon mission carrying multiple scientific payloads into the stratosphere.",
+      "highlights": [
+        "Targets a 100,000+ foot flight profile.",
+        "Supports five payload modules in a 2.5 kg payload envelope.",
+        "Expands LIFTS launch operations from mainland campaign work to Puerto Rico."
+      ],
+      "objectives": [
+        "Collect environmental data through ascent, float, and descent.",
+        "Validate payload integration and recovery systems.",
+        "Train the next mission operations cohort at UPRM."
+      ]
+    },
+    "cubesat": {
+      "slug": "cubesat",
+      "name": "CubeSat Program",
+      "status": "in-progress",
+      "status_display": "In Progress",
+      "form_factor": "1U CubeSat",
+      "dimensions": "10x10x10 cm",
+      "mass": "<1.33 kg",
+      "target_orbit": "LEO (400km)",
+      "target_orbit_altitude": "~400 km LEO",
+      "mission_life": "~1 year",
+      "est_launch_year": 2028,
+      "est_launch_year_display": "2028",
+      "target_year": "2028",
+      "image": "https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=1200&q=80",
+      "summary": "A long-range development program to design and build a student-led CubeSat at UPRM.",
+      "highlights": [
+        "Developing toward a 1U CubeSat platform.",
+        "Building subsystem experience through balloon payload work.",
+        "Targeting a future low Earth orbit mission."
+      ],
+      "objectives": [
+        "Develop flight software, power, communications, structures, and payload subsystems.",
+        "Create a repeatable student satellite engineering pipeline.",
+        "Prepare the university team for future launch opportunities."
+      ]
+    }
+  },
+  "programs": [
+    {
+      "name": "High-Altitude Balloon Program",
+      "description": "Near-space flights that carry student-built payloads to the stratosphere.",
+      "facts": ["100,000+ feet", "Up to 6 lbs", "2-3 hours typical"]
+    },
+    {
+      "name": "CubeSat Development",
+      "description": "Subsystem research and integration toward a future UPRM student satellite.",
+      "facts": ["1U platform", "~400 km LEO", "2028 target"]
+    },
+    {
+      "name": "Mission Operations",
+      "description": "Launch planning, tracking, recovery, logistics, and field operations training.",
+      "facts": ["Launch", "Track", "Recover"]
+    }
+  ],
+  "launches": [
+    {
+      "mission": "ascent",
+      "type": "upcoming",
+      "cta": "View Mission",
+      "path": "/ascent"
+    },
+    {
+      "mission": "nexo",
+      "type": "completed",
+      "cta": "View Results",
+      "path": "/nexo"
+    }
+  ],
+  "updates": [
+    {
+      "title": "ASCENT mission planning continues",
+      "date": "January 2026",
+      "category": "Mission Update",
+      "summary": "The team is refining payload interfaces, launch operations, and recovery procedures for ASCENT."
+    },
+    {
+      "title": "CubeSat program enters subsystem study phase",
+      "date": "Fall 2025",
+      "category": "Program Update",
+      "summary": "Students are mapping requirements for power, communications, flight software, and structures."
+    },
+    {
+      "title": "NEXO recovery validates operations workflow",
+      "date": "April 2024",
+      "category": "Flight Result",
+      "summary": "The NEXO mission gave LIFTS hands-on launch, tracking, recovery, and post-flight analysis experience."
+    }
+  ],
+  "careers": [
+    {
+      "title": "Payload Engineer",
+      "team": "Mission Systems",
+      "description": "Design, assemble, and test scientific payloads for balloon and satellite missions."
+    },
+    {
+      "title": "Flight Software Developer",
+      "team": "Avionics",
+      "description": "Build embedded and ground-support software for data collection, telemetry, and mission operations."
+    },
+    {
+      "title": "Operations Coordinator",
+      "team": "Mission Operations",
+      "description": "Support launch planning, safety checklists, logistics, communications, and recovery procedures."
+    },
+    {
+      "title": "Communications Designer",
+      "team": "Outreach",
+      "description": "Help translate mission work into visuals, articles, social posts, and sponsor-ready material."
+    }
+  ],
+  "contributors": [
+    {
+      "name": "University of Puerto Rico at Mayaguez",
+      "logo": "/images/contributors-logos/seal-rum-uprm.svg"
+    },
+    {
+      "name": "Puerto Rico Space Grant Consortium",
+      "logo": "/images/contributors-logos/Puerto Rico Space Grant Consortium.png"
+    },
+    {
+      "name": "Nationwide Eclipse Ballooning Project",
+      "logo": "/images/contributors-logos/NEBP logo alternate2 1703x1657.png"
+    },
+    {
+      "name": "Collins Aerospace",
+      "logo": "/images/contributors-logos/Collins Aerospace.svg"
+    },
+    {
+      "name": "Montana State University",
+      "logo": "/images/contributors-logos/logo-montana-state-u.png"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Who can join LIFTS?",
+      "answer": "Students interested in aerospace, electronics, software, operations, outreach, and research are welcome to connect with the team."
+    },
+    {
+      "question": "Do I need prior aerospace experience?",
+      "answer": "No. LIFTS is built around learning by doing, mentorship, and hands-on mission work."
+    },
+    {
+      "question": "How can sponsors or collaborators reach the team?",
+      "answer": "Use the contact page or email the team directly to discuss mission support, partnerships, media, or technical collaboration."
+    }
+  ],
+  "contact": {
+    "general_email": "lifts@upr.edu",
+    "media_email": "media@lifts.uprm.edu",
+    "info_email": "info@lifts.uprm.edu",
+    "cards": [
+      {
+        "title": "General",
+        "value": "lifts@upr.edu",
+        "description": "Questions, student interest, and mission information."
+      },
+      {
+        "title": "Media",
+        "value": "media@lifts.uprm.edu",
+        "description": "Press, interviews, and public communication."
+      },
+      {
+        "title": "Partnerships",
+        "value": "info@lifts.uprm.edu",
+        "description": "Sponsors, research partners, and collaborators."
+      }
+    ]
+  },
+  "social": {
+    "twitter": "@LIFTS_UPRM",
+    "instagram": "@lifts_uprm",
+    "instagram_url": "https://www.instagram.com/liftspr.uprm/",
+    "linkedin": "LIFTS UPRM",
+    "linkedin_url": "https://www.linkedin.com/company/liftsuprm",
+    "youtube": "LIFTS Space",
+    "youtube_url": "https://www.youtube.com/@LIFTS_UPRM"
+  },
+  "documents": [
+    {
+      "title": "Fact Sheet",
+      "path": "/assets/documents/fact-sheet.md"
+    },
+    {
+      "title": "Press Kit",
+      "path": "/assets/documents/press-kit.md"
+    },
+    {
+      "title": "Brand Guidelines",
+      "path": "/assets/documents/brand-guidelines.md"
+    }
+  ]
+}
