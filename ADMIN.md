@@ -43,6 +43,20 @@ Editors hit **"Submit for Approval"**; the change sits in the **Approvals** tab 
 an admin approves (publishes it) or rejects it. Admins see **"Save & Publish"** and go live
 immediately.
 
+## Newsletter signups
+
+The "Register Interest" form on the Updates page calls the `subscribe` Supabase Edge
+Function, which stores the email in the `newsletter_subscribers` table and adds it to
+the Resend audience. This requires two secrets under **Edge Functions → Secrets** in
+the Supabase dashboard:
+
+- `RESEND_API_KEY` — a Resend API key with full access (contacts + sending)
+- `RESEND_AUDIENCE_ID` — from resend.com → Audiences → your audience → ID
+
+If the secrets are missing, signups are still saved to the database
+(`synced_to_resend = false`) so no subscriber is ever lost. Send broadcasts from
+resend.com → Broadcasts to that audience.
+
 ## Notes & limits
 
 - The site always falls back to the content bundled in `src/data/siteData.json`

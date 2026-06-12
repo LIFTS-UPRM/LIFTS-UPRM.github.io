@@ -1,6 +1,7 @@
 import React, { Suspense, useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { ContentProvider, useSiteData } from './lib/content.jsx';
+import { supabase } from './lib/supabaseClient.js';
 import './styles/main.css';
 import './styles/react.css';
 
@@ -1034,21 +1035,41 @@ function FaqSection() {
 }
 
 function NewsletterSection() {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState('idle'); // idle | sending | done | error
+  const [errorMessage, setErrorMessage] = useState('');
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const email = event.currentTarget.elements['newsletter-email'].value.trim();
+    setStatus('sending');
+    try {
+      const { data, error } = await supabase.functions.invoke('subscribe', { body: { email } });
+      if (error || data?.error) {
+        setErrorMessage(data?.error || 'Something went wrong. Please try again.');
+        setStatus('error');
+      } else {
+        setStatus('done');
+      }
+    } catch {
+      setErrorMessage('Something went wrong. Please try again.');
+      setStatus('error');
+    }
+  }
+
   return (
     <section className="section section-dark">
       <div className="container container-narrow">
-        <SectionHeader label="Stay Updated" title="Follow Mission Progress" subtitle="Use the contact form for now while the team evaluates a dedicated newsletter backend." />
-        <form className="newsletter-form" onSubmit={(event) => {
-          event.preventDefault();
-          setSubmitted(true);
-        }}>
+        <SectionHeader label="Stay Updated" title="Follow Mission Progress" subtitle="Get launch announcements, mission results, and program news from the LIFTS team." />
+        <form className="newsletter-form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label className="form-label" htmlFor="newsletter-email">Email</label>
-            <input className="form-input" id="newsletter-email" type="email" required />
+            <input className="form-input" id="newsletter-email" type="email" required disabled={status === 'done'} />
           </div>
-          {submitted ? <p className="form-success">Thanks. Newsletter capture is noted for future backend integration.</p> : null}
-          <button className="btn btn-primary" type="submit">Register Interest</button>
+          {status === 'done' ? <p className="form-success">You're on the list. Thanks for following LIFTS!</p> : null}
+          {status === 'error' ? <p className="form-error">{errorMessage}</p> : null}
+          <button className="btn btn-primary" type="submit" disabled={status === 'sending' || status === 'done'}>
+            {status === 'sending' ? 'Signing you up…' : status === 'done' ? 'Subscribed' : 'Register Interest'}
+          </button>
         </form>
       </div>
     </section>
